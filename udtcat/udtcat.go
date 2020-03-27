@@ -20,7 +20,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	udt "github.com/Syncbak-Git/udtwrapper"
+	udt "github.com/Syncbak-Git/go-udtwrapper"
 )
 
 var verbose = false

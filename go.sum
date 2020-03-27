@@ -1,0 +1,8 @@
+github.com/jbenet/go-ctxgroup v0.0.0-20160322225458-ad154da565f8 h1:qGvxJ0i5P7uZEkoa7IL/7g0sSbPx6/JX02nbakFvWLE=
+github.com/jbenet/go-ctxgroup v0.0.0-20160322225458-ad154da565f8/go.mod h1:bDc+xVYTc7v2PYlNssWXNE4sEHcU+GOJyYIW9MrBkdE=
+github.com/libp2p/go-sockaddr v0.0.1 h1:yM3fy0n5oommws7FmCeOh+IoyEFpmlO77+2eXiaWIko=
+github.com/libp2p/go-sockaddr v0.0.1/go.mod h1:EBeYKMYs5LFgoaBSN2nA2jPQVmnA4gv7WkY64CBqYqQ=
+golang.org/x/sys v0.0.0-20190228124157-a34e9553db1e h1:ZytStCyV048ZqDsWHiYDdoI2Vd4msMcrDECFxS+tL9c=
+golang.org/x/sys v0.0.0-20190228124157-a34e9553db1e/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20200327173247-9dae0f8f5775 h1:TC0v2RSO1u2kn1ZugjrFXkRZAEaqMN/RW+OTZkBzmLE=
+golang.org/x/sys v0.0.0-20200327173247-9dae0f8f5775/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=

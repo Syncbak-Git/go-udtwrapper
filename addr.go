@@ -5,8 +5,9 @@ import (
 	"net"
 	"syscall"
 
-	sockaddr "github.com/jbenet/go-sockaddr"
-	sockaddrnet "github.com/jbenet/go-sockaddr/net"
+	sockaddr "github.com/libp2p/go-sockaddr"
+	sockaddrnet "github.com/libp2p/go-sockaddr/net"
+	"golang.org/x/sys/unix"
 )
 
 type UDTAddr struct {
@@ -83,7 +84,7 @@ func WrapUDPAddr(ua *net.UDPAddr) *UDTAddr {
 }
 
 // sockArgs returns (AF, *RawSockaddrAny, error)
-func (a *UDTAddr) socketArgs() (int, *syscall.RawSockaddrAny, sockaddr.Socklen, error) {
+func (a *UDTAddr) socketArgs() (int, *unix.RawSockaddrAny, sockaddr.Socklen, error) {
 	af := a.AF()
 	sa := sockaddrnet.NetAddrToSockaddr(a.addr)
 	if sa == nil {
@@ -98,7 +99,7 @@ func (a *UDTAddr) socketArgs() (int, *syscall.RawSockaddrAny, sockaddr.Socklen, 
 	return af, rsa, salen, nil
 }
 
-func addrWithSockaddr(rsa *syscall.RawSockaddrAny) (*UDTAddr, error) {
+func addrWithSockaddr(rsa *unix.RawSockaddrAny) (*UDTAddr, error) {
 	sa, err := sockaddr.AnyToSockaddr(rsa)
 	if err != nil {
 		return nil, err

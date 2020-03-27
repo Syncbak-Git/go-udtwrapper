@@ -1,12 +1,5 @@
 package udt
 
-import (
-// "net"
-
-// sockaddr "github.com/jbenet/go-sockaddr"
-// sockaddrnet "github.com/jbenet/go-sockaddr/net"
-)
-
 // UDTConn is the implementation of the Conn and PacketConn interfaces
 // for UDT network connections.
 type UDTConn struct {

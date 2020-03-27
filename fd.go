@@ -10,6 +10,7 @@ import (
 	"unsafe"
 
 	ctxgrp "github.com/jbenet/go-ctxgroup"
+	"golang.org/x/sys/unix"
 )
 
 // #cgo linux CFLAGS: -DLINUX
@@ -213,7 +214,7 @@ func (fd *udtFD) accept() (*udtFD, error) {
 	}
 	defer fd.decref()
 
-	var sa syscall.RawSockaddrAny
+	var sa unix.RawSockaddrAny
 	var salen C.int
 
 	sock2 := C.udt_accept(fd.sock, (*C.struct_sockaddr)(unsafe.Pointer(&sa)), &salen)
