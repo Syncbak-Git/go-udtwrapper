@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	udt "github.com/Syncbak-Git/udtwrapper"
 	"io"
 	"io/ioutil"
 	"net"
@@ -11,6 +10,8 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+
+	udt "github.com/Syncbak-Git/go-udtwrapper"
 )
 
 var verbose = false
