@@ -3,8 +3,8 @@ package udt
 import (
 	"net"
 
-	// sockaddr "github.com/jbenet/go-sockaddr"
-	// sockaddrnet "github.com/jbenet/go-sockaddr/net"
+	// sockaddr "github.com/libp2p/go-sockaddr"
+	// sockaddrnet "github.com/libp2p/go-sockaddr/net"
 )
 
 // UDTListener is a network listener for UDT.
